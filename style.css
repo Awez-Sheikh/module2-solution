@@ -1,0 +1,91 @@
+/* Global Reset and Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  overflow: hidden; /* Clear floats */
+}
+
+/* Menu Item Box */
+.menu-item {
+  border: 1px solid #000;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  float: left;
+  position: relative;
+  min-height: 180px;
+}
+
+/* Section Title Box */
+.menu-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 16px;
+  border: 1px solid #000;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: #ddd;
+}
+
+/* Individual Background Colors */
+.menu-title.chicken {
+  background-color: #ffcccc;
+}
+
+.menu-title.beef {
+  background-color: #b22222;
+  color: #fff;
+}
+
+.menu-title.sushi {
+  background-color: #fff176;
+}
+
+/* ========== Responsive Layouts ========== */
+
+/* Desktop: 3 columns */
+@media (min-width: 992px) {
+  .menu-item {
+    width: 31.33%;
+  }
+}
+
+/* Tablet: 2 columns + 1 full-width */
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-item {
+    width: 48%;
+  }
+
+  .menu-item:nth-child(3) {
+    width: 100%;
+    clear: both;
+  }
+}
+
+/* Mobile: Stack vertically */
+@media (max-width: 767px) {
+  .menu-item {
+    width: 100%;
+    clear: both;
+  }
+}
