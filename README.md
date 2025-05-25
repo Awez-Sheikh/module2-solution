@@ -1,1 +1,5 @@
+# HTML, CSSandJavaScript for Web Developers by John Hopkins University
 # module2-solution
+Peer-graded Assignment: Module 2 Coding Assignment
+
+In this assignment, we developed a fully responsive web page using only HTML and CSS, adhering strictly to provided mockup illustrations for desktop, tablet, and mobile views. The page consists of a heading and three content sections titled Chicken, Beef, and Sushi. Each section features a top-right corner title box styled with distinct colors and borders. The layout dynamically adapts to screen size using media queries: on desktops, all three sections align in a single row; on tablets, the first two sections align side-by-side while the third drops to a new row; on mobile devices, each section stacks vertically. We used percentage-based widths and the float property to handle layout, and absolute positioning for title placement. Styling was handled through an external CSS file using `box-sizing: border-box`, padding, and margins to ensure consistent spacing. The solution was committed to Git, pushed to GitHub, and deployed via GitHub Pages for live preview and peer review.
